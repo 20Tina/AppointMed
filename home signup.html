@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-image:url("dr.avif");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.nav1 {
+overflow:auto;
+background-color:#dde8ed;
+
+}
+.nav1 a{
+font-size:20px;
+text-decoration: none;
+ color: black;
+ background-color:rgb(164, 193, 230);
+ border-radius: 15px;
+
+}
+.nav1 ul{
+list-style-type:none;
+display:flex;
+justify-content:center;
+}  
+.nav1 li{
+display: inline-block;
+ margin-left:25px;
+
+}
+#div1{
+        background-color: rgba(235, 245, 255, 0.5);
+        width:550px;
+       height:400px;
+       margin-top:100px;
+       margin-left:450px;
+       border-radius:50px;
+       padding-top:5px;
+
+        }
+        
+        form{
+          text-align: center;
+          }
+          h1{
+            margin-top:10px;
+         text-align: center;
+          font-size: xx-large;
+         }
+         footer{
+    text-align: center;
+  background-color:#dde8ed;
+  padding: 10px;
+  margin-top: 100px;
+         }
+    </style>
+</head>
+<body>
+    <div class="nav1">
+        <header>
+    <nav>
+        <ul>
+            <li> <a href="home.html">home page</a></li>
+            <li> <a href="doctor.html">our doctor</a></li>
+               <li> <a href="about.html">about as</a></li>
+               <li> <a href="contact.html">contact</a></li>
+            
+        </ul>
+        </nav>
+        </header>
+    </div>
+        <br>
+        <div id="div1">
+            <h1>sign up</h1>
+            <form method="post" action="consultant.html">
+                
+                <label for="username">username:</label>
+                <input type ="text" name="username" id="username" placeholder="username"required>
+                  <br>
+                  <br>
+                  <label for="mail"> Email: </label>
+                  <input type="email" id="mail" placeholder="enter your email" required>
+                  <br>
+                  <br>
+                  <label for="password:"> password: </label>
+                 <input type="password" name="password" id="password" placeholder="password" minlength="5" maxlength="8"required>
+                 <br>
+                 <br>
+                 <label for="btn"></label>
+                 <input type="submit" id="btn" value="signup" style="background-color:rgb(13, 175, 244)">
+                 <br>
+                 <br>
+                 <p>already a memeber?</p>
+                 <a href="consultant.html">login</a>
+            </form>
+        </div>
+        <footer>
+            <p>&copy; 2023 Doctor Appointment System.All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

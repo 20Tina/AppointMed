@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <style>
+      body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url("dr.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+          .nav1 {
+ overflow:auto;
+ background-color:#dde8ed;
+ 
+ }
+ .nav1 a{
+ font-size:20px;
+ text-decoration: none;
+  color: black;
+  background-color:rgb(164, 193, 230);
+  border-radius: 15px;
+ 
+ }
+ .nav1 ul{
+ list-style-type:none;
+ display:flex;
+ justify-content:center;
+ }  
+ .nav1 li{
+ display: inline-block;
+  margin-left:25px;
+ 
+ }
+ #div1{
+       background-color:rgba(235, 245, 255, 0.5); 
+       text-align: center;
+       width:50%;
+       height:100%;
+       margin-left: 350px;
+       border-radius: 10px;
+       font-family: Arial, Helvetica, sans-serif;
+ }
+ h2{
+    background-color:rgba(235, 245, 255, 0.5); 
+    text-align: center;
+    font-size:xx-large;
+    width:30%;
+    margin-left:480px
+ }
+ footer{
+     text-align: center;
+   background-color:#dde8ed;
+   padding: 25px;
+  
+ }
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="nav1">
+            <header>
+            <nav>
+                <ul>
+                    <li> <a href="home.html">home page</a></li>
+                    <li> <a href="doctor.html">our doctors</a></li>
+                       <li> <a href="about.html">about as</a></li>
+                       <li> <a href="contact.html">contact</a></li>
+                    
+                </ul>
+                </nav>
+                </header>
+            </div>
+            <h2>Our Doctors</h2>
+            <div id="div1">
+                  <img  id ="myImage" src="images1.jpeg" alt="images1">
+                    <p id="demo1">Dr. Anderson</p>
+                    <p id="demo">Specialty: Cardiology</p>
+    <button onclick="changeImage()">Change doctor</button>
+</div>
+<br>
+<br>
+    <footer>
+        <p>&copy; 2023 Doctor Appointment System. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function changeImage() {
+            document.getElementById("myImage").src = "dermatology.jpeg"
+            document.getElementById("demo1").innerHTML="Dr.jones"   
+            document.getElementById("demo").innerHTML="Specialty: Dermatology"
+            
+              
+        }
+        
+    </script>
+
+    
+</body>
+</html>
